@@ -1,3 +1,4 @@
+require 'minitest'
 require 'minitest/autorun'
 begin
   require 'redgreen'
@@ -6,8 +7,8 @@ begin
 rescue LoadError, RuntimeError
 end
 
-class MiniTest::Unit::TestCase
+class MiniTest::TestCase
   def self.test(name, &block)
-    define_method("test_#{name.gsub(/\s/,'_').downcase}", &block)
+    define_method("test_#{name.gsub(/\s/, '_').downcase}", &block)
   end
 end

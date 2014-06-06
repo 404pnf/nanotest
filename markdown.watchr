@@ -9,8 +9,9 @@ class ::String
   def md2html
     RDiscount.new(self).to_html
   end
+
   def save_as(path)
-    Pathname(path).open('w') {|f| f << self }
+    Pathname(path).open('w') { |f| f << self }
   end
 end
 
@@ -25,7 +26,7 @@ end
 # --------------------------------------------------
 # Watchr Rules
 # --------------------------------------------------
-watch( '^README\.md' )
+watch('^README\.md')
 
 # --------------------------------------------------
 # Signal Handling
@@ -35,4 +36,3 @@ Signal.trap('QUIT') { default_action.call }
 
 # Ctrl-C
 Signal.trap('INT') { abort("\n") }
-

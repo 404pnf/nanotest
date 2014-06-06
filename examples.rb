@@ -1,5 +1,5 @@
 require 'nanotest'
-include  Nanotest
+include Nanotest
 
 class Foo
   attr_accessor :bar
@@ -28,4 +28,3 @@ output:
 .....FF
 (examples.rb:021) assertion failed
 (examples.rb:022) boom
-
