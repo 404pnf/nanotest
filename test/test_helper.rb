@@ -1,11 +1,5 @@
 require 'minitest'
 require 'minitest/autorun'
-begin
-  require 'redgreen'
-  require 'phocus'
-  require 'ruby-debug'
-rescue LoadError, RuntimeError
-end
 
 class MiniTest::TestCase
   def self.test(name, &block)
