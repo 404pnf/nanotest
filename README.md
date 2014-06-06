@@ -1,6 +1,6 @@
-*"Frustra fit per plura quod potest fieri per pauciora."* --William of Ockham  
 ![](https://travis-ci.org/404pnf/nanotest.svg)
 
+*"Frustra fit per plura quod potest fieri per pauciora."* --William of Ockham  
 
 "It is futile to do with more things that which can be done with fewer."
 
