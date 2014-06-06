@@ -18,5 +18,8 @@ module Nanotest
     @@dots.join + "\n" + @@failures.join("\n")
   end
 
-  at_exit { puts results unless results.strip.empty?; exit @@failures.empty? }
+  at_exit do
+    puts results unless results.strip.empty?
+    exit @@failures.empty?
+  end
 end
