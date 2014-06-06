@@ -1,4 +1,5 @@
 gem 'minitest'
+gem 'rake'
 #gem 'redgreen'
 #gem 'phocus'
 #gem 'ruby-debug'
