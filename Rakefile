@@ -15,17 +15,6 @@ namespace(:test) do
 
   desc 'Run all tests on multiple ruby versions (requires rvm)'
   # Let travis-ci handles this
-  # task(:portability) do
-  #   versions = %w(  1.8.6  1.8.7  1.9  1.9.2  jruby  )
-  #   versions.each do |version|
-  #     system <<-BASH
-  #       bash -c 'source ~/.rvm/scripts/rvm;
-  #                rvm use #{version};
-  #                echo "--------- #{version} ----------";
-  #                rake -s test:all'
-  #     BASH
-  #   end
-  # end
 end
 
 # --------------------------------------------------
