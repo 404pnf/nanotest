@@ -1,3 +1,3 @@
-gem 'redgreen'
-gem 'phocus'
-gem 'ruby-debug'
+#gem 'redgreen'
+#gem 'phocus'
+#gem 'ruby-debug'
