@@ -2,21 +2,13 @@
 # Tests
 # --------------------------------------------------
 task default: :test
-
-namespace(:test) do
-
   desc 'Run all tests'
-  task(:all) do
+  task(:test) do
     tests = Dir['test/**/test_*.rb'] - ['test/test_helper.rb']
     cmd = "ruby -I.:lib -e'%w( #{tests.join(' ')} ).each {|file| require file }'"
     puts(cmd) if ENV['VERBOSE']
     system(cmd)
   end
-
-  desc 'Run all tests on multiple ruby versions (requires rvm)'
-  # Let travis-ci handles this
-end
-
 # --------------------------------------------------
 # Docs
 # --------------------------------------------------
